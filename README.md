@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## MUI/MATERIAL:
+- Box
+- Stack
+- Typography
+- Paper
+- IconButton
+
+## MUI/ICONS-MATERIAL:
+- Search
+
 ## Available Scripts
 
 In the project directory, you can run:
