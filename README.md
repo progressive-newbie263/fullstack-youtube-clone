@@ -9,6 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Paper
 - IconButton
 
+## LIMIT:
+- 500 API calls maximum, per day (RapidAPI free plan)
+
 ## MUI/ICONS-MATERIAL:
 - Search
 
