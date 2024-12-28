@@ -10,21 +10,16 @@ import {
   demoChannelUrl 
 } from '../../utils/constants';
 
-const VideoCard = ({ 
-  video: {
-    id: { videoId }, 
-    snippet 
-  } 
-}) => {
+const VideoCard = ({ video: {id: { videoId }, snippet} }) => {
   //cardMedia sẽ show ảnh thumbnail của các vid từ api.
   //fix: Card md 320px -> 240px, CardMedia 358px -> 240px
   return (
-    <Card sx={{ width: {sm: '358px', md:'320px', xs:'100%'}, boxShadow: 'none', borderRadius: 0 }}> 
+    <Card sx={{ width: { xs:'100%', sm: '358px', md:'320px', lg: '400px', xl:'312px' }, boxShadow: 'none', borderRadius: 0 }}> 
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           alt={snippet?.title} 
           image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
-          sx={{ width: {xs: '100%', sm: '358px'}, height: 180}} 
+          sx={{ width: {xs: '100%', sm: '358px', md: '320px', lg: '400px'}, height: 180}} 
         />
       </Link>
 
